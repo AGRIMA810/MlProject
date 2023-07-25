@@ -12,7 +12,9 @@ LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
 logging.basicConfig(
     filename=LOG_FILE_PATH,
     format="[ %(asctime)s ] %(lineno)d %(name)s -%(levelname)s -%(message)s",
+    #timestamp , line number , name , level name and message 
     level=logging.INFO,
 
 )
-
+# if __name__ == "__main__":
+#     logging.info("logging started")
