@@ -26,13 +26,13 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-if __name__ == "__main__":
-        #the value of __name__ varies depending on how our Python code is executed
-    try:
-        a= 1/0
-    except Exception as e :
-        logging.info("divided by zero error")
-        raise CustomException(e,_sys)
+# if __name__ == "__main__":
+#         #the value of __name__ varies depending on how our Python code is executed
+#     try:
+#         a= 1/0
+#     except Exception as e :
+#         logging.info("divided by zero error")
+#         raise CustomException(e,_sys)
 
 
 
